@@ -4,30 +4,116 @@
 <meta charset="UTF-8">
 <title>TriveStar RP 公式ルール</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-  body { font-family: "Noto Sans JP", sans-serif; line-height: 1.8; max-width: 900px; margin: 40px auto; padding: 0 20px; }
-  h1 { text-align: center; color: #2c7be5; margin-bottom: 40px; }
-  .menu { display: flex; flex-direction: column; gap: 15px; }
-  a { background: #2c7be5; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-size: 18px; text-align: center; }
-  a:hover { background: #1b5bb8; }
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1b1b1b, #2c2c2c);
+    color: #fff;
+  }
+
+  header {
+    background: rgba(0,0,0,0.6);
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #e52c2c;
+    text-shadow: 0 0 10px #e52c2c;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background: #222;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+    border-color: #e52c2c;
+  }
+
+  .card a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #aaa;
+    font-size: 14px;
+  }
+
 </style>
 </head>
+
 <body>
 
-<h1>TriveStar RP 公式ルール</h1>
+<header>
+  <h1>TriveStar RP - 公式ルールページ</h1>
+</header>
 
-<div class="menu">
-  <a href="official.html">公式ルール</a>
-  <a href="crime.html">犯罪ルール</a>
-  <a href="pd.html">PD（警察）ルール</a>
-  <a href="gang.html">ギャングルール</a>
-  <a href="job.html">ジョブルール</a>
+<div class="container">
+
+  <div class="menu-grid">
+
+    <div class="card">
+      <a href="official.html">📘 公式ルール</a>
+    </div>
+
+    <div class="card">
+      <a href="crime.html">🔫 犯罪ルール</a>
+    </div>
+
+    <div class="card">
+      <a href="pd.html">🚔 PDルール</a>
+    </div>
+
+    <div class="card">
+      <a href="gang.html">💀 ギャングルール</a>
+    </div>
+
+    <div class="card">
+      <a href="job.html">💼 ジョブルール</a>
+    </div>
+
+  </div>
+
 </div>
 
-</body>
-</html>
-
-</div>
+<footer>
+  © 2024 TriveStar RP - All Rights Reserved
+</footer>
 
 </body>
 </html>

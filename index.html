@@ -45,14 +45,16 @@
   }
 
   .card {
-    background: #222;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid #333;
-    transition: 0.3s;
-    box-shadow: 0 0 10px rgba(255,255,255,0.05);
-  }
+  background: rgba(0, 0, 0, 0.45); /* ← 半透明（黒45%） */
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px); /* ← ガラス風にする（超おすすめ） */
+}
+
 
   .card:hover {
     transform: translateY(-6px);
